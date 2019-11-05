@@ -26,11 +26,7 @@
     "ios": {
       "supportsTablet": true
     },
-<<<<<<< HEAD
     "description": "",
     "githubUrl": "https://github.com/AnneFlorette/quiz"
-=======
-    "description": ""
->>>>>>> d70404b5884828ee8d0ab7f6538ec61ca590fc79
   }
 }
