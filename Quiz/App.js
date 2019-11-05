@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Button,
+  SafeAreaView
+} from "react-native";
 
 // export default function App() {
 //   return (
@@ -17,7 +24,7 @@ export default class Logo extends Component {
     // };
     return (
       //<Image source={pic} style={{ width: 193, height: 110 }} />
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <Image
             source={require("./assets/quiz.png")}
@@ -29,24 +36,46 @@ export default class Logo extends Component {
             }}
           />
         </View>
-        <View style={styles.content}>
-          <View style={styles.questionsWrapper}>
-            <Text>Lorem ipsum</Text>
-            <View style={styles.questions}></View>
+
+        <View style={styles.questions}></View>
+        <View style={styles.answers}>
+          <View style={styles.buttonsView}>
+            <Button
+              title="answer1"
+              onPress={() => {
+                alert("You tapped the button 1!");
+              }}
+            />
           </View>
-          <View style={styles.answersWrapper}>
-            <Text>Lorem ipsum</Text>
-            <View style={styles.answers}>
-              <Button title="answer1" onPress={Alert.alert("oui1")} />
-              {/* <Button title="answer2" onPress={Alert.alert("oui2")} /> */}
-            </View>
-            <View style={styles.answers}>
-              <Button title="answer3" onPress={Alert.alert("oui3")} />
-              {/* <Button title="answer4" onPress={Alert.alert("oui4")} /> */}
-            </View>
+
+          <View style={styles.buttonsView}>
+            <Button
+              title="answer2"
+              onPress={() => {
+                alert("You tapped the button 2!");
+              }}
+            />
           </View>
         </View>
-      </View>
+        <View style={styles.answers}>
+          <View style={styles.buttonsView}>
+            <Button
+              title="answer3"
+              onPress={() => {
+                alert("You tapped the button 3!");
+              }}
+            />
+          </View>
+          <View style={styles.buttonsView}>
+            <Button
+              title="answer4"
+              onPress={() => {
+                alert("You tapped the button 4!");
+              }}
+            />
+          </View>
+        </View>
+      </SafeAreaView>
     );
   }
 }
@@ -71,13 +100,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center"
   },
-  questionsWrapper: {
-    flex: 2
+  questions: {
+    flex: 4,
+    backgroundColor: "#ececec",
+    width: "100%"
   },
-  questions: {},
-  answersWrapper: {
-    flex: 1,
-    flexDirection: "row"
+  answers: {
+    flexDirection: "row",
+    justifyContent: "space-around"
   },
-  answers: {}
+  buttonsView: {
+    margin: 20,
+    justifyContent: "center"
+  }
 });
