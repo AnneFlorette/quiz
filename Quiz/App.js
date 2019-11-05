@@ -5,7 +5,8 @@ import {
   View,
   Image,
   Button,
-  SafeAreaView
+  SafeAreaView,
+  ImageBackground
 } from "react-native";
 
 // export default function App() {
@@ -36,45 +37,56 @@ export default class Logo extends Component {
             }}
           />
         </View>
+        <ImageBackground
+          source={require("./assets/presentation.png")}
+          style={{
+            width: "60%",
+            height: "50%",
+            resizeMode: "contain",
+            flex: 8
+          }}
+        >
+          <View style={styles.questions}>
+            <Text>Super question</Text>
+          </View>
+          <View style={styles.answers}>
+            <View style={styles.buttonsView}>
+              <Button
+                title="answer1"
+                onPress={() => {
+                  alert("You tapped the button 1!");
+                }}
+              />
+            </View>
 
-        <View style={styles.questions}></View>
-        <View style={styles.answers}>
-          <View style={styles.buttonsView}>
-            <Button
-              title="answer1"
-              onPress={() => {
-                alert("You tapped the button 1!");
-              }}
-            />
+            <View style={styles.buttonsView}>
+              <Button
+                title="answer2"
+                onPress={() => {
+                  alert("You tapped the button 2!");
+                }}
+              />
+            </View>
           </View>
-
-          <View style={styles.buttonsView}>
-            <Button
-              title="answer2"
-              onPress={() => {
-                alert("You tapped the button 2!");
-              }}
-            />
+          <View style={styles.answers}>
+            <View style={styles.buttonsView}>
+              <Button
+                title="answer3"
+                onPress={() => {
+                  alert("You tapped the button 3!");
+                }}
+              />
+            </View>
+            <View style={styles.buttonsView}>
+              <Button
+                title="answer4"
+                onPress={() => {
+                  alert("You tapped the button 4!");
+                }}
+              />
+            </View>
           </View>
-        </View>
-        <View style={styles.answers}>
-          <View style={styles.buttonsView}>
-            <Button
-              title="answer3"
-              onPress={() => {
-                alert("You tapped the button 3!");
-              }}
-            />
-          </View>
-          <View style={styles.buttonsView}>
-            <Button
-              title="answer4"
-              onPress={() => {
-                alert("You tapped the button 4!");
-              }}
-            />
-          </View>
-        </View>
+        </ImageBackground>
       </SafeAreaView>
     );
   }
@@ -95,14 +107,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     width: "100%"
   },
-  content: {
-    flex: 8,
-    justifyContent: "center",
-    alignItems: "center"
-  },
   questions: {
     flex: 4,
-    backgroundColor: "#ececec",
     width: "100%"
   },
   answers: {
@@ -111,6 +117,7 @@ const styles = StyleSheet.create({
   },
   buttonsView: {
     margin: 20,
+    width: "50%",
     justifyContent: "center"
   }
 });
