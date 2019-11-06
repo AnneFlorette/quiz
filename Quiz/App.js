@@ -28,7 +28,7 @@ export default class App extends Component {
           />
         </View>
         {/* <Home /> */}
-        <Question questions={data[Math.floor(Math.random() * 12)]} />
+        <Question questions={data} />
       </SafeAreaView>
     );
   }

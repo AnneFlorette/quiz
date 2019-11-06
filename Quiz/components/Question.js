@@ -7,12 +7,27 @@ export default class Question extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      buttonColors: ["orange", "orange", "orange", "orange"]
+      buttonColors: ["orange", "orange", "orange", "orange"],
+      questions: this.props.questions[
+        Math.floor(Math.random() * this.props.questions.length)
+      ]
     };
   }
+  resetDisplay() {
+    setTimeout(() => {
+      this.setState(state => {
+        state.questions = this.props.questions[
+          Math.floor(Math.random() * this.props.questions.length)
+        ];
+        state.buttonColors = ["orange", "orange", "orange", "orange"];
+        return state;
+      });
+    }, 3000);
+  }
+
   check(id) {
-    let rightAnswerId = this.props.questions.answers.indexOf(
-      this.props.questions.answers.filter(e => e.isRight)[0]
+    let rightAnswerId = this.state.questions.answers.indexOf(
+      this.state.questions.answers.filter(e => e.isRight)[0]
     );
 
     // if id == rightAnswerId
@@ -35,15 +50,16 @@ export default class Question extends Component {
       <View style={styles.container}>
         <View style={styles.questions}>
           <Text style={styles.questionText}>
-            {this.props.questions.question}
+            {this.state.questions.question}
           </Text>
         </View>
         <View style={styles.answers}>
           <View style={styles.buttonsView}>
             <Button
-              title={this.props.questions.answers[0].answer}
+              title={this.state.questions.answers[0].answer}
               onPress={() => {
                 this.check(0);
+                this.resetDisplay();
               }}
               color={this.state.buttonColors[0]}
             />
@@ -51,27 +67,30 @@ export default class Question extends Component {
 
           <View style={styles.buttonsView}>
             <Button
-              title={this.props.questions.answers[1].answer}
+              title={this.state.questions.answers[1].answer}
               onPress={() => {
                 this.check(1);
+                this.resetDisplay();
               }}
               color={this.state.buttonColors[1]}
             />
           </View>
           <View style={styles.buttonsView}>
             <Button
-              title={this.props.questions.answers[2].answer}
+              title={this.state.questions.answers[2].answer}
               onPress={() => {
                 this.check(2);
+                this.resetDisplay();
               }}
               color={this.state.buttonColors[2]}
             />
           </View>
           <View style={styles.buttonsView}>
             <Button
-              title={this.props.questions.answers[3].answer}
+              title={this.state.questions.answers[3].answer}
               onPress={() => {
                 this.check(3);
+                this.resetDisplay();
               }}
               color={this.state.buttonColors[3]}
             />
@@ -90,7 +109,6 @@ const styles = StyleSheet.create({
   },
   questions: {
     flex: 1,
-    width: "100%",
     justifyContent: "center",
     padding: 20,
     backgroundColor: "#fcc601"
