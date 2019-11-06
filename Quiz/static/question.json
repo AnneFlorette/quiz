@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "Martin R. Dean est...",
+    "question": " Qui était Martin R. Dean ?",
     "answers": [
       {
         "answer": "Un écrivain Suisse",
@@ -23,7 +23,7 @@
   },
   {
     "id": 2,
-    "question": "Nikola Karabatic est né",
+    "question": "Quand Nikola Karabatic est-il né ?",
     "answers": [
       {
         "answer": "Le 16 juin 1984",
@@ -45,7 +45,7 @@
   },
   {
     "id": 3,
-    "question": "Jacques-Yves Cousteau à vécu",
+    "question": "Dans quelle période Jean-Jacques Cousteau a-t-il vécu ?",
     "answers": [
       {
         "answer": "De 1896 à 1986",
@@ -67,7 +67,7 @@
   },
   {
     "id": 4,
-    "question": "Diam's à obtenu une victoire de la musique pour",
+    "question": "Pour quel titre Diam's a-t-elle obtenu une victoire de la musique ?",
     "answers": [
       {
         "answer": "Dans ma bulle",
@@ -89,7 +89,7 @@
   },
   {
     "id": 5,
-    "question": "Quel est le nom qu'Ariana Grande a sorti en 2019",
+    "question": "Quel est le nom de l'album qu'Ariana Grande a sorti en 2019 ?",
     "answers": [
       {
         "answer": "Thank you, next",
@@ -111,7 +111,7 @@
   },
   {
     "id": 6,
-    "question": "En quelle année est sorti le film \"La reine des neiges\"",
+    "question": "En quelle année est sorti le film \"La reine des neiges\" ?",
     "answers": [
       {
         "answer": "2010",
@@ -133,7 +133,7 @@
   },
   {
     "id": 7,
-    "question": "Quel est le nom complet du célèbre écrivain Tolkien",
+    "question": "Quel est le nom complet du célèbre écrivain Tolkien ?",
     "answers": [
       {
         "answer": "John Ronald Reuel Tolkien",
@@ -155,7 +155,7 @@
   },
   {
     "id": 8,
-    "question": "Qui est l'écrivain de \"Game of thrones\"",
+    "question": "Qui est l'écrivain de \"Game of thrones\" ?",
     "answers": [
       {
         "answer": "George L. R. Richard",
@@ -170,7 +170,95 @@
         "isRight": false
       },
       {
-        "answer": "George M. L. Richard",
+        "answer": "George L. R. Martin",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Cmmbien de pattes a une araignée ?",
+    "answers": [
+      {
+        "answer": "4",
+        "isRight": false
+      },
+      {
+        "answer": "6",
+        "isRight": false
+      },
+      {
+        "answer": "8",
+        "isRight": true
+      },
+      {
+        "answer": "10",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Dans quel film Emma Watson ne joue-t-elle pas ?",
+    "answers": [
+      {
+        "answer": "Harry Potter à l'école des sorciers",
+        "isRight": false
+      },
+      {
+        "answer": "Colonia",
+        "isRight": false
+      },
+      {
+        "answer": "Noé",
+        "isRight": false
+      },
+      {
+        "answer": "La belle au bois dormant",
+        "isRight": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Quel livre Emile Zola n'a-t-il pas écrit ?",
+    "answers": [
+      {
+        "answer": "Thérèse Raquin",
+        "isRight": false
+      },
+      {
+        "answer": "Le curé",
+        "isRight": false
+      },
+      {
+        "answer": "L'Assommoir",
+        "isRight": false
+      },
+      {
+        "answer": "La comédie humaine",
+        "isRight": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Qui joue le rôle d'Amélie Poulain ?",
+    "answers": [
+      {
+        "answer": "Audrey Tautou",
+        "isRight": false
+      },
+      {
+        "answer": "Marion Cotillard",
+        "isRight": true
+      },
+      {
+        "answer": "Sophie Marceau",
+        "isRight": false
+      },
+      {
+        "answer": "Isabelle Balkany",
         "isRight": false
       }
     ]
