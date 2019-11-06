@@ -177,7 +177,7 @@
   },
   {
     "id": 9,
-    "question": "Cmmbien de pattes a une araignée ?",
+    "question": "Combien de pattes a une araignée ?",
     "answers": [
       {
         "answer": "4",
@@ -259,6 +259,116 @@
       },
       {
         "answer": "Isabelle Balkany",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "A quelle région appartient le département de l'Indre ?",
+    "answers": [
+      {
+        "answer": "Centre",
+        "isRight": true
+      },
+      {
+        "answer": "Bourgogne",
+        "isRight": false
+      },
+      {
+        "answer": "Picardie",
+        "isRight": false
+      },
+      {
+        "answer": "Auvergne",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Qui a chanté la chanson \"All I want for christmas\" ?",
+    "answers": [
+      {
+        "answer": "Mariah Carey",
+        "isRight": true
+      },
+      {
+        "answer": "Ariana Grande",
+        "isRight": false
+      },
+      {
+        "answer": "Whitney Houston",
+        "isRight": false
+      },
+      {
+        "answer": "Gloria Gaylor",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Où est né Eugène-René Poubelle ?",
+    "answers": [
+      {
+        "answer": "A Lille",
+        "isRight": false
+      },
+      {
+        "answer": "A Paris",
+        "isRight": false
+      },
+      {
+        "answer": "A Caen",
+        "isRight": true
+      },
+      {
+        "answer": "A Marseille",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Quel est le nom latin du loup ?",
+    "answers": [
+      {
+        "answer": "Canis Loupus",
+        "isRight": false
+      },
+      {
+        "answer": "Canis canis",
+        "isRight": false
+      },
+      {
+        "answer": "Lupus canis",
+        "isRight": false
+      },
+      {
+        "answer": "Canis lupus",
+        "isRight": true
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Qui était le dieu de la démesure dans la Grèce antique ?",
+    "answers": [
+      {
+        "answer": "Dionysos ",
+        "isRight": true
+      },
+      {
+        "answer": "Zeus",
+        "isRight": false
+      },
+      {
+        "answer": "Athéna",
+        "isRight": false
+      },
+      {
+        "answer": "Méphistophélès",
         "isRight": false
       }
     ]
