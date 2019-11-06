@@ -46,9 +46,7 @@ export default class Logo extends Component {
             flex: 8
           }}
         >
-          <View style={styles.questions}>
-            <Text>Super question</Text>
-          </View>
+          <View style={styles.questions}></View>
           <View style={styles.answers}>
             <View style={styles.buttonsView}>
               <Button
@@ -56,6 +54,7 @@ export default class Logo extends Component {
                 onPress={() => {
                   alert("You tapped the button 1!");
                 }}
+                color="#c76363"
               />
             </View>
 
@@ -65,6 +64,7 @@ export default class Logo extends Component {
                 onPress={() => {
                   alert("You tapped the button 2!");
                 }}
+                color="#63b1c7"
               />
             </View>
           </View>
@@ -75,6 +75,7 @@ export default class Logo extends Component {
                 onPress={() => {
                   alert("You tapped the button 3!");
                 }}
+                color="#76c763"
               />
             </View>
             <View style={styles.buttonsView}>
@@ -83,6 +84,7 @@ export default class Logo extends Component {
                 onPress={() => {
                   alert("You tapped the button 4!");
                 }}
+                color="#b763c7"
               />
             </View>
           </View>
