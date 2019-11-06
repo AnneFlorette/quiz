@@ -34,7 +34,9 @@ export default class Question extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.questions}>
-          <Text>{this.props.questions.question}</Text>
+          <Text style={styles.questionText}>
+            {this.props.questions.question}
+          </Text>
         </View>
         <View style={styles.answers}>
           <View style={styles.buttonsView}>
@@ -88,11 +90,14 @@ const styles = StyleSheet.create({
   },
   questions: {
     flex: 1,
-    width: "100%"
+    width: "100%",
+    justifyContent: "center",
+    padding: 20,
+    backgroundColor: "#fcc601"
   },
   answers: {
     flexWrap: "wrap",
-    backgroundColor: "pink",
+    backgroundColor: "#64b2ba",
 
     flexDirection: "row",
     justifyContent: "space-around"
@@ -100,5 +105,9 @@ const styles = StyleSheet.create({
   buttonsView: {
     padding: 10,
     width: "50%"
+  },
+  questionText: {
+    fontSize: 24,
+    fontWeight: "bold"
   }
 });
