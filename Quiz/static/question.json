@@ -372,5 +372,115 @@
         "isRight": false
       }
     ]
+  },
+  {
+    "id": 18,
+    "question": "Quel tableau Caspar David Friedrich a-t-il peint ?",
+    "answers": [
+      {
+        "answer": "Le voyageur contemplant une mer de nuages",
+        "isRight": true
+      },
+      {
+        "answer": "Les Tournesols",
+        "isRight": false
+      },
+      {
+        "answer": "Le Bassin aux nymphéas",
+        "isRight": false
+      },
+      {
+        "answer": "La Persistance de la mémoire",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Quel était le métier d'Edward Snowden ?",
+    "answers": [
+      {
+        "answer": "Développeur Web",
+        "isRight": false
+      },
+      {
+        "answer": "Administrateur réseau",
+        "isRight": true
+      },
+      {
+        "answer": "Data scientist",
+        "isRight": false
+      },
+      {
+        "answer": "Espion",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "De quel pays vient la marque de confiserie Haribo ?",
+    "answers": [
+      {
+        "answer": "France",
+        "isRight": false
+      },
+      {
+        "answer": "Suisse",
+        "isRight": false
+      },
+      {
+        "answer": "Belgique",
+        "isRight": false
+      },
+      {
+        "answer": "Allemagne",
+        "isRight": true
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Qui a écrit le titre \"Highway to hell\"",
+    "answers": [
+      {
+        "answer": "Queen",
+        "isRight": false
+      },
+      {
+        "answer": "Deep Purple",
+        "isRight": false
+      },
+      {
+        "answer": "AC/DC",
+        "isRight": true
+      },
+      {
+        "answer": "Nirvana",
+        "isRight": false
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "De quel roi Marie-Antoinette était l'épouse ?",
+    "answers": [
+      {
+        "answer": "Henri IV ",
+        "isRight": false
+      },
+      {
+        "answer": "Clovis",
+        "isRight": false
+      },
+      {
+        "answer": "Louis XIV",
+        "isRight": false
+      },
+      {
+        "answer": "Louis XVI",
+        "isRight": true
+      }
+    ]
   }
 ]
