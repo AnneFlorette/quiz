@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "question": "Martin R. Dean est...",
+  "answers": [
+    {
+      "answer": "Un écrivain Suisse",
+      "isRight": true
+    },
+    {
+      "answer": "Un médecin Suisse",
+      "isRight": false
+    },
+    {
+      "answer": "Un écrivain Anglais",
+      "isRight": false
+    },
+    {
+      "answer": "Un philosophe Anglais",
+      "isRight": false
+    }
+  ]
+}
