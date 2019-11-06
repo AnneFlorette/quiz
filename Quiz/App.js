@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Home  from './components/Home';
-import Question  from './components/Question';
+import Home from "./components/Home";
+import Question from "./components/Question";
+const data = require("./static/question.json");
 import {
   StyleSheet,
   Text,
@@ -10,7 +11,6 @@ import {
   SafeAreaView,
   ImageBackground
 } from "react-native";
-
 
 export default class App extends Component {
   render() {
@@ -27,8 +27,8 @@ export default class App extends Component {
             }}
           />
         </View>
-        <Home/>
-        <Question/>
+        <Home />
+        <Question questions={data[Math.floor(Math.random() * 4)]} />
       </SafeAreaView>
     );
   }
