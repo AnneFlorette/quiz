@@ -1,0 +1,22 @@
+{
+  "id": 4,
+  "question": "Diam's à obtenu une victoire de la musique pour",
+  "answers": [
+    {
+      "answer": "Dans ma bulle",
+      "isRight": false
+    },
+    {
+      "answer": "La Boulette",
+      "isRight": false
+    },
+    {
+      "answer": "Brut de Femme",
+      "isRight": true
+    },
+    {
+      "answer": "Ma France à moi",
+      "isRight": false
+    }
+  ]
+}
