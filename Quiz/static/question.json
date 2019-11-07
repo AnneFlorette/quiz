@@ -536,7 +536,7 @@
         "isRight": false
       },
       {
-        "answer": "Brézil",
+        "answer": "Brésil",
         "isRight": false
       },
       {
@@ -595,22 +595,22 @@
   },
   {
     "id": 28,
-    "question": "Comment s'appelle le premier one-woman-show de Blanche Gardin ?",
+    "question": "Quelle est la taille de l'arbre le plus grand du monde ?",
     "answers": [
       {
-        "answer": "Bonne nuit Blanche",
+        "answer": "122,3 m",
         "isRight": false
       },
       {
-        "answer": "Je parle toute seule",
+        "answer": "95,6 m",
         "isRight": false
       },
       {
-        "answer": "Il faut que je vous parle !",
+        "answer": "155,55 m",
         "isRight": true
       },
       {
-        "answer": "Blanche-neige et les sept conneries",
+        "answer": "172,85 m",
         "isRight": false
       }
     ]

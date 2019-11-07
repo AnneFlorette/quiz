@@ -4,11 +4,10 @@
     "slug": "Quiz",
     "privacy": "public",
     "sdkVersion": "35.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "android": {
+      "package": "test.cyrilleetannerelou.quiz"
+    },
+    "platforms": ["android"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,9 +19,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
