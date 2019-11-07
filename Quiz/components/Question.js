@@ -6,28 +6,37 @@ import { createPointerEventsContainer } from "react-navigation-stack";
 export default class Question extends Component {
   constructor(props) {
     super(props);
+    let o = this.props.questions;
+    for (
+      var j, x, i = o.length;
+      i;
+      j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x
+    );
+
     this.state = {
       buttonColors: ["orange", "orange", "orange", "orange"],
-      questions: this.props.questions[
-        Math.floor(Math.random() * this.props.questions.length)
-      ]
+      questions: o,
+      currentQuestion: o.pop()
     };
   }
   resetDisplay() {
     setTimeout(() => {
-      this.setState(state => {
-        state.questions = this.props.questions[
-          Math.floor(Math.random() * this.props.questions.length)
-        ];
-        state.buttonColors = ["orange", "orange", "orange", "orange"];
-        return state;
-      });
+      let nouvelleQuestion = this.props.questions.pop();
+      if (!nouvelleQuestion) {
+        alert("FIN");
+      } else {
+        this.setState(state => {
+          state.currentQuestion = nouvelleQuestion;
+          state.buttonColors = ["orange", "orange", "orange", "orange"];
+          return state;
+        });
+      }
     }, 3000);
   }
 
   check(id) {
-    let rightAnswerId = this.state.questions.answers.indexOf(
-      this.state.questions.answers.filter(e => e.isRight)[0]
+    let rightAnswerId = this.state.currentQuestion.answers.indexOf(
+      this.state.currentQuestion.answers.filter(e => e.isRight)[0]
     );
 
     // if id == rightAnswerId
@@ -50,13 +59,13 @@ export default class Question extends Component {
       <View style={styles.container}>
         <View style={styles.questions}>
           <Text style={styles.questionText}>
-            {this.state.questions.question}
+            {this.state.currentQuestion.question}
           </Text>
         </View>
         <View style={styles.answers}>
           <View style={styles.buttonsView}>
             <Button
-              title={this.state.questions.answers[0].answer}
+              title={this.state.currentQuestion.answers[0].answer}
               onPress={() => {
                 this.check(0);
                 this.resetDisplay();
@@ -67,7 +76,7 @@ export default class Question extends Component {
 
           <View style={styles.buttonsView}>
             <Button
-              title={this.state.questions.answers[1].answer}
+              title={this.state.currentQuestion.answers[1].answer}
               onPress={() => {
                 this.check(1);
                 this.resetDisplay();
@@ -77,7 +86,7 @@ export default class Question extends Component {
           </View>
           <View style={styles.buttonsView}>
             <Button
-              title={this.state.questions.answers[2].answer}
+              title={this.state.currentQuestion.answers[2].answer}
               onPress={() => {
                 this.check(2);
                 this.resetDisplay();
@@ -87,7 +96,7 @@ export default class Question extends Component {
           </View>
           <View style={styles.buttonsView}>
             <Button
-              title={this.state.questions.answers[3].answer}
+              title={this.state.currentQuestion.answers[3].answer}
               onPress={() => {
                 this.check(3);
                 this.resetDisplay();
@@ -110,13 +119,13 @@ const styles = StyleSheet.create({
   questions: {
     flex: 1,
     justifyContent: "center",
+
     padding: 20,
     backgroundColor: "#fcc601"
   },
   answers: {
     flexWrap: "wrap",
     backgroundColor: "#64b2ba",
-
     flexDirection: "row",
     justifyContent: "space-around"
   },
@@ -125,6 +134,7 @@ const styles = StyleSheet.create({
     width: "50%"
   },
   questionText: {
+    fontFamily: "Roboto",
     fontSize: 24,
     fontWeight: "bold"
   }
