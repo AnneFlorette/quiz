@@ -23,7 +23,7 @@ export default class Question extends Component {
     setTimeout(() => {
       let nouvelleQuestion = this.props.questions.pop();
       if (!nouvelleQuestion) {
-        alert("FIN");
+        alert("Merci d'avoir joué !!!");
       } else {
         this.setState(state => {
           state.currentQuestion = nouvelleQuestion;
